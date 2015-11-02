@@ -56,8 +56,8 @@ class DatabaseCreation(BaseDatabaseCreation):
     }
 
 
-DatabaseError = Database.DatabaseError
-IntegrityError = Database.IntegrityError
+DatabaseError = Database.errors.DatabaseError
+IntegrityError = Database.errors.IntegrityError
 
 
 class DatabaseFeatures(BaseDatabaseFeatures):
